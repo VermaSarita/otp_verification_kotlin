@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#F2F7F4"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".OtpActivity">
+
+    <ImageView
+        android:src="@drawable/otp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+    <TextView
+        android:id="@+id/phoneno"
+        android:layout_width="match_parent"
+        android:text="Verify +7068471148"
+        android:gravity="center"
+        android:textColor="#036007"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:background="#F2F7F4"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Otp Verification"
+            android:textColor="#656262"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="One Time Password"
+            android:textColor="#0B0B0B"
+            android:layout_marginStart="1dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="On This Mobile Number"
+        android:textColor="#0B0B0B"
+        android:layout_marginStart="1dp"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"/>
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp"
+        android:elevation="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+
+            <com.chaos.view.PinView
+                android:id="@+id/pinView"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PinWidget.PinView" />
+            <Button
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:text="Continue"
+                android:textSize="16sp"
+                android:backgroundTint="#32BD38"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

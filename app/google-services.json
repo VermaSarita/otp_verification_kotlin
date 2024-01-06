@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "513003986087",
+    "project_id": "questionandanswer-45d98",
+    "storage_bucket": "questionandanswer-45d98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513003986087:android:03ecc827e86bc0e431cf82",
+        "android_client_info": {
+          "package_name": "com.ggpl.chatappkotlin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwc8rItXKLfkcL9qXmnUt4-IYu9tXB-N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

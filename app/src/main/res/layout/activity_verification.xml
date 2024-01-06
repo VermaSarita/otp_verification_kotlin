@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#F2F7F4"
+    android:gravity="center_horizontal"
+    tools:context=".VerificationActivity">
+
+    <ImageView
+        android:src="@drawable/otp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+<TextView
+    android:layout_width="match_parent"
+    android:text="Otp Verification"
+    android:gravity="center"
+    android:textColor="#036007"
+    android:textStyle="bold"
+    android:layout_marginTop="20dp"
+    android:textSize="22sp"
+    android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:background="#F2F7F4"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:text="Otp Verification"
+            android:textColor="#656262"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="One Time Password"
+            android:textColor="#0B0B0B"
+            android:layout_marginStart="1dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:text="On This Mobile Number"
+        android:textColor="#0B0B0B"
+        android:layout_marginStart="1dp"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"/>
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editnumber"
+                android:layout_width="match_parent"
+                android:hint="Type Your Phone Number"
+                android:ems="1"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:inputType="phone"
+                android:textColor="#1C1C1C"
+                android:textStyle="bold|normal"
+                android:background="@drawable/backgroung_shape"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/continuebtn"
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:text="Continue"
+                android:textSize="16sp"
+                android:backgroundTint="#32BD38"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <!--Edittext for getting users phone number-->
+    <EditText
+        android:id="@+id/idEdtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:hint="Enter your phone"
+        android:importantForAutofill="no"
+        android:inputType="phone" />
+
+    <!--Button for getting OTP-->
+    <Button
+        android:id="@+id/idBtnGetOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtPhoneNumber"
+        android:layout_margin="10dp"
+        android:text="Get OTP"
+        android:textAllCaps="false" />
+
+    <!--Edittext for getting otp from user-->
+    <EditText
+        android:id="@+id/idEdtOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idBtnGetOtp"
+        android:layout_margin="10dp"
+        android:hint="Enter OTP"
+        android:importantForAutofill="no"
+        android:inputType="phone" />
+
+    <!--button for verifying user OTP-->
+    <Button
+        android:id="@+id/idBtnVerify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idEdtOtp"
+        android:layout_margin="10dp"
+        android:text="Verify OTP"
+        android:textAllCaps="false" />
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
